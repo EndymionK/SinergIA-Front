@@ -154,10 +154,15 @@ function PaymentMethod() {
 
             <Alert severity="warning" onClose={handleCloseAlert} variant="outlined" sx={{ width: '100%', borderRadius: 0 }}>
               <AlertTitle>¡Alerta!</AlertTitle>
-              Enviar a UCI
+              Evalúa la posibilidad de enviar a UCI
             </Alert>
           </Box>
+          <ArgonBox display="flex" alignItems="center" sx={{ width: '100%', borderRadius: 0}} style={{marginTop: '3%'}}>
+              <Checkbox/>
+              <ArgonTypography variant="body1">Marca si fue correcta la predicción.</ArgonTypography>
+            </ArgonBox>
         </DialogContent>
+        
       </Dialog>
 
     </Card>
