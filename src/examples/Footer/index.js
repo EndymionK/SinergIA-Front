@@ -60,19 +60,18 @@ function Footer({ company, links }) {
         fontSize={size.sm}
         px={1.5}
       >
-        &copy; {new Date().getFullYear()}, made with
+        &copy; {new Date().getFullYear()}, Hecho con
         <ArgonBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
           <Icon color="inherit" fontSize="inherit">
             favorite
           </Icon>
         </ArgonBox>
-        by
+        por
         <Link href={href} target="_blank">
           <ArgonTypography variant="button" fontWeight="medium">
             &nbsp;{name}&nbsp;
           </ArgonTypography>
         </Link>
-        for a better web.
       </ArgonBox>
       <ArgonBox
         component="ul"
@@ -99,12 +98,9 @@ function Footer({ company, links }) {
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.creative-tim.com/", name: "Asclepio" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.creative-tim.com/", name: "Asclepio" },
   ],
 };
 

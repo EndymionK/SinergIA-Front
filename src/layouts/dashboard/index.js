@@ -90,7 +90,7 @@ function Default() {
                     <Icon sx={{ fontWeight: "bold" }}>arrow_upward</Icon>
                   </ArgonBox>
                   <ArgonTypography variant="button" color="text" fontWeight="medium">
-                    4% more{" "}
+                    5% más {" "}
                     <ArgonTypography variant="button" color="text" fontWeight="regular">
                       A comparación de 2023
                     </ArgonTypography>
@@ -109,7 +109,7 @@ function Default() {
             <SalesTable title="Especialidades más requeridas en urgencias" rows={salesTableData} />
           </Grid>
           <Grid item xs={12} md={4}>
-            <CategoriesList title="categories" categories={categoriesListData} />
+            <CategoriesList title="Enfermedades más frecuentes" categories={categoriesListData} />
           </Grid>
         </Grid>
       </ArgonBox>

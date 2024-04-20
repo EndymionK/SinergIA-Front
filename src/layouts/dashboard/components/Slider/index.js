@@ -18,8 +18,8 @@ import ArgonTypography from "components/ArgonTypography";
 
 // Images
 import am from "assets/images/am.jpg";
-import bg2 from "assets/images/img-1.jpg";
-import bg3 from "assets/images/img-3.jpg";
+import am2 from "assets/images/Alma-Mater-2.png";
+
 
 function Slider() {
   // install SwiperJS modules
@@ -96,28 +96,16 @@ function Slider() {
           <ArgonBox
             sx={{
               position: "relative",
-              backgroundImage: `url(${am})`,
+              backgroundImage: `url(${am2})`,
               backgroundSize: "cover",
               height: "100%",
             }}
           >
             <ArgonBox position="absolute" bottom={16} ml={6} py={2.5} textAlign="left" width="80%">
-              <ArgonBox
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                width="32px"
-                height="32px"
-                bgColor="white"
-                borderRadius="md"
-                textAlign="center"
-                mb={2}
-              >
-              </ArgonBox>
-              <ArgonTypography variant="h5" color="white" mb={0.5}>
+              <ArgonTypography variant="h5" color="black" mb={0.5}>
                 Hospital alma máter
               </ArgonTypography>
-              <ArgonTypography variant="body2" color="white">
+              <ArgonTypography variant="body2" color="black">
                 Servir con el corazón es amor por la vida
               </ArgonTypography>
             </ArgonBox>
@@ -133,22 +121,10 @@ function Slider() {
             }}
           >
             <ArgonBox position="absolute" bottom={16} ml={6} py={2.5} textAlign="left" width="80%">
-              <ArgonBox
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                width="32px"
-                height="32px"
-                bgColor="white"
-                borderRadius="md"
-                textAlign="center"
-                mb={2}
-              >
-              </ArgonBox>
-              <ArgonTypography variant="h5" color="white" mb={0.5}>
+              <ArgonTypography variant="h5" color="black" mb={0.5}>
                 Hospital alma máter
               </ArgonTypography>
-              <ArgonTypography variant="body2" color="white">
+              <ArgonTypography variant="body2" color="black">
               Servir con el corazón es amor por la vida
               </ArgonTypography>
             </ArgonBox>

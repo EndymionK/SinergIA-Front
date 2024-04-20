@@ -14,10 +14,10 @@ Coded by www.creative-tim.com
 */
 
 const gradientLineChartData = {
-  labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  labels: ["Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
   datasets: [
     {
-      label: "Mobile apps",
+      label: "Cantidad pacientes",
       color: "info",
       data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
     },
