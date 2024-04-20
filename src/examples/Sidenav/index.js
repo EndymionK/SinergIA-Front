@@ -33,7 +33,6 @@ import ArgonTypography from "components/ArgonTypography";
 
 // Argon Dashboard 2 MUI example components
 import SidenavItem from "examples/Sidenav/SidenavItem";
-import SidenavFooter from "examples/Sidenav/SidenavFooter";
 
 // Custom styles for the Sidenav
 import SidenavRoot from "examples/Sidenav/SidenavRoot";
@@ -156,7 +155,6 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       <List>{renderRoutes}</List>
 
       <ArgonBox pt={1} mt="auto" mb={2} mx={2}>
-        <SidenavFooter />
       </ArgonBox>
     </SidenavRoot>
   );
