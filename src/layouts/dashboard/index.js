@@ -53,39 +53,39 @@ function Default() {
             <DetailedStatisticsCard
               title="Pacientes en UCI"
               count="30"
-              icon={{ color: "info", component: <i className="ni ni-money-coins" /> }}
-              percentage={{ color: "success", count: "+55%", text: "desde ayer" }}
+              icon={{ color: "info", component: <i className="ni ni-ambulance" /> }}
+              percentage={{ color: "success", count: "+55%", text: "Desde ayer" }}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <DetailedStatisticsCard
-              title="Pacientes hospitalizados"
+              title="Hospitalizados"
               count="15"
-              icon={{ color: "error", component: <i className="ni ni-world" /> }}
+              icon={{ color: "error", component: <i className="ni ni-single-02" /> }}
               percentage={{ color: "success", count: "+3%", text: "Desde la semana pasada" }}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <DetailedStatisticsCard
-              title="new clients"
-              count="+3,462"
-              icon={{ color: "success", component: <i className="ni ni-paper-diploma" /> }}
-              percentage={{ color: "error", count: "-2%", text: "since last quarter" }}
+              title="Posibles recaidas"
+              count="5"
+              icon={{ color: "success", component: <i className="ni ni-bell-55" /> }}
+              percentage={{ color: "error", count: "-2%", text: "Desde la última hora" }}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <DetailedStatisticsCard
-              title="sales"
-              count="$103,430"
-              icon={{ color: "warning", component: <i className="ni ni-cart" /> }}
-              percentage={{ color: "success", count: "+5%", text: "than last month" }}
+              title="Total pacientes"
+              count="50"
+              icon={{ color: "warning", component: <i className="ni ni-circle-08" /> }}
+              percentage={{ color: "success", count: "+5%", text: "Mes pasado" }}
             />
           </Grid>
         </Grid>
         <Grid container spacing={3} mb={3}>
           <Grid item xs={12} lg={7}>
             <GradientLineChart
-              title="Sales Overview"
+              title="Pacientes en UCI"
               description={
                 <ArgonBox display="flex" alignItems="center">
                   <ArgonBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
@@ -94,7 +94,7 @@ function Default() {
                   <ArgonTypography variant="button" color="text" fontWeight="medium">
                     4% more{" "}
                     <ArgonTypography variant="button" color="text" fontWeight="regular">
-                      in 2022
+                      A comparación de 2023
                     </ArgonTypography>
                   </ArgonTypography>
                 </ArgonBox>
@@ -108,7 +108,7 @@ function Default() {
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} md={8}>
-            <SalesTable title="Sales by Country" rows={salesTableData} />
+            <SalesTable title="Especialidades más requeridas en urgencias" rows={salesTableData} />
           </Grid>
           <Grid item xs={12} md={4}>
             <CategoriesList title="categories" categories={categoriesListData} />

@@ -123,7 +123,7 @@ function RTL() {
             <SalesTable title="Sales by Country" rows={salesTableData} />
           </Grid>
           <Grid item xs={12} md={4}>
-            <CategoriesList title="categories" categories={categoriesListData} />
+            <CategoriesList title="Enfermedades más mortales" categories={categoriesListData} />
           </Grid>
         </Grid>
       </ArgonBox>

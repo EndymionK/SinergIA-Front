@@ -17,7 +17,7 @@ import ArgonBox from "components/ArgonBox";
 import ArgonTypography from "components/ArgonTypography";
 
 // Images
-import bg1 from "assets/images/img-2.jpg";
+import am from "assets/images/am.jpg";
 import bg2 from "assets/images/img-1.jpg";
 import bg3 from "assets/images/img-3.jpg";
 
@@ -96,7 +96,7 @@ function Slider() {
           <ArgonBox
             sx={{
               position: "relative",
-              backgroundImage: `url(${bg1})`,
+              backgroundImage: `url(${am})`,
               backgroundSize: "cover",
               height: "100%",
             }}
@@ -113,16 +113,12 @@ function Slider() {
                 textAlign="center"
                 mb={2}
               >
-                <ArgonTypography variant="caption" color="dark" lineHeight={0}>
-                  <ArgonBox component="i" color="dark" className="ni ni-camera-compact" />
-                </ArgonTypography>
               </ArgonBox>
               <ArgonTypography variant="h5" color="white" mb={0.5}>
-                Get started with Argon
+                Hospital alma máter
               </ArgonTypography>
               <ArgonTypography variant="body2" color="white">
-                There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get
-                good at.
+                Servir con el corazón es amor por la vida
               </ArgonTypography>
             </ArgonBox>
           </ArgonBox>
@@ -131,7 +127,7 @@ function Slider() {
           <ArgonBox
             sx={{
               position: "relative",
-              backgroundImage: `url(${bg2})`,
+              backgroundImage: `url(${am})`,
               backgroundSize: "cover",
               height: "100%",
             }}
@@ -148,51 +144,12 @@ function Slider() {
                 textAlign="center"
                 mb={2}
               >
-                <ArgonTypography variant="caption" lineHeight={0}>
-                  <ArgonBox component="i" color="dark" className="ni ni-bulb-61" />
-                </ArgonTypography>
               </ArgonBox>
               <ArgonTypography variant="h5" color="white" mb={0.5}>
-                Faster way to create web pages
+                Hospital alma máter
               </ArgonTypography>
               <ArgonTypography variant="body2" color="white">
-                That&apos;s my skill. I&apos;m not really specifically talented at anything except
-                for the ability to learn.
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ArgonBox
-            sx={{
-              position: "relative",
-              backgroundImage: `url(${bg3})`,
-              backgroundSize: "cover",
-              height: "100%",
-            }}
-          >
-            <ArgonBox position="absolute" bottom={16} ml={6} py={2.5} textAlign="left" width="80%">
-              <ArgonBox
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                width="32px"
-                height="32px"
-                bgColor="white"
-                borderRadius="md"
-                textAlign="center"
-                mb={2}
-              >
-                <ArgonTypography variant="caption" color="dark" lineHeight={0}>
-                  <ArgonBox component="i" color="dark" className="ni ni-trophy" />
-                </ArgonTypography>
-              </ArgonBox>
-              <ArgonTypography variant="h5" color="white" mb={0.5}>
-                Share with us your design tips!
-              </ArgonTypography>
-              <ArgonTypography variant="body2" color="white">
-                Don&apos;t be afraid to be wrong because you can&apos;t learn anything from a
-                compliment.
+              Servir con el corazón es amor por la vida
               </ArgonTypography>
             </ArgonBox>
           </ArgonBox>

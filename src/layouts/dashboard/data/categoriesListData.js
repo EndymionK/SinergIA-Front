@@ -19,13 +19,13 @@ import ArgonTypography from "components/ArgonTypography";
 const categoriesListData = [
   {
     color: "dark",
-    icon: <i className="ni ni-mobile-button" style={{ fontSize: "12px" }} />,
-    name: "Devices",
+    icon: <i className="ni ni-badge" style={{ fontSize: "12px" }} />,
+    name: "Paro cardiorespiratorio",
     description: (
       <>
-        250 in stock,{" "}
+        50 Este mes,{" "}
         <ArgonTypography variant="caption" color="text" fontWeight="medium">
-          346+ sold
+          30+ Mes pasado
         </ArgonTypography>
       </>
     ),
@@ -33,13 +33,13 @@ const categoriesListData = [
   },
   {
     color: "dark",
-    icon: <i className="ni ni-tag" style={{ fontSize: "12px" }} />,
-    name: "Tickets",
+    icon: <i className="ni ni-badge" style={{ fontSize: "12px" }} />,
+    name: "Derrame cerebral",
     description: (
       <>
-        123 closed,{" "}
+        50 Este mes,{" "}
         <ArgonTypography variant="caption" color="text" fontWeight="medium">
-          15 open
+          30+ mes pasado
         </ArgonTypography>
       </>
     ),
@@ -47,13 +47,13 @@ const categoriesListData = [
   },
   {
     color: "dark",
-    icon: <i className="ni ni-box-2" style={{ fontSize: "12px" }} />,
-    name: "Error logs",
+    icon: <i className="ni ni-badge" style={{ fontSize: "12px" }} />,
+    name: "EPOC",
     description: (
       <>
-        1 is active,{" "}
+        50 Este mes,{" "}
         <ArgonTypography variant="caption" color="text" fontWeight="medium">
-          40 closed
+          30+ mes pasado
         </ArgonTypography>
       </>
     ),
@@ -61,12 +61,13 @@ const categoriesListData = [
   },
   {
     color: "dark",
-    icon: <i className="ni ni-satisfied" style={{ fontSize: "12px" }} />,
-    name: "Happy Users",
+    icon: <i className="ni ni-badge" style={{ fontSize: "12px" }} />,
+    name: "Cáncer",
     description: (
       <>
+        50 Este mes,{" "}
         <ArgonTypography variant="caption" color="text" fontWeight="medium">
-          +&nbsp;430
+          30+ mes pasado
         </ArgonTypography>
       </>
     ),
