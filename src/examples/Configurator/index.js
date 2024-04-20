@@ -73,9 +73,9 @@ function Configurator() {
         px={3}
       >
         <ArgonBox>
-          <ArgonTypography variant="h5">Argon Configurator</ArgonTypography>
+          <ArgonTypography variant="h5">Configuración</ArgonTypography>
           <ArgonTypography variant="body2" color="text">
-            See our dashboard options.
+          Consulte las opciones de dashboard.
           </ArgonTypography>
         </ArgonBox>
 
@@ -99,7 +99,7 @@ function Configurator() {
 
       <ArgonBox pt={1.25} pb={3} px={3}>
         <ArgonBox>
-          <ArgonTypography variant="h6">Sidenav Colors</ArgonTypography>
+          <ArgonTypography variant="h6">Colores de la barra lateral</ArgonTypography>
 
           <ArgonBox mb={0.5}>
             {sidenavColors.map((color) => (
@@ -133,9 +133,9 @@ function Configurator() {
         </ArgonBox>
 
         <ArgonBox mt={3} lineHeight={1}>
-          <ArgonTypography variant="h6">Sidenav Type</ArgonTypography>
+          <ArgonTypography variant="h6">Tipo de barra de navegación lateral</ArgonTypography>
           <ArgonTypography variant="button" color="text" fontWeight="regular">
-            Choose between 2 different sidenav types.
+          Elija entre 2 tipos diferentes de sidenav.
           </ArgonTypography>
 
           <ArgonBox
@@ -150,7 +150,7 @@ function Configurator() {
               onClick={handleWhiteSidenav}
               fullWidth
             >
-              White
+              Clara
             </ArgonButton>
             <ArgonButton
               color="info"
@@ -161,12 +161,12 @@ function Configurator() {
                 ml: 1,
               }}
             >
-              Dark
+              Oscura
             </ArgonButton>
           </ArgonBox>
         </ArgonBox>
         <ArgonBox display="flex" justifyContent="space-between" mt={3} lineHeight={1}>
-          <ArgonTypography variant="h6">Navbar Fixed</ArgonTypography>
+          <ArgonTypography variant="h6">Barra de navegación fija</ArgonTypography>
 
           <Switch checked={fixedNavbar} onChange={handleFixedNavbar} />
         </ArgonBox>
@@ -174,7 +174,7 @@ function Configurator() {
         <Divider />
 
         <ArgonBox display="flex" justifyContent="space-between" lineHeight={1}>
-          <ArgonTypography variant="h6">Sidenav Mini</ArgonTypography>
+          <ArgonTypography variant="h6">Barra de navegación Mini</ArgonTypography>
 
           <Switch checked={miniSidenav} onChange={handleMiniSidenav} />
         </ArgonBox>
@@ -182,89 +182,11 @@ function Configurator() {
         <Divider />
 
         <ArgonBox display="flex" justifyContent="space-between" lineHeight={1}>
-          <ArgonTypography variant="h6">Light / Dark</ArgonTypography>
+          <ArgonTypography variant="h6">Claro / Oscuro</ArgonTypography>
 
           <Switch checked={darkMode} onChange={handleDarkMode} />
         </ArgonBox>
 
-        <ArgonBox mt={5} mb={2}>
-          <ArgonBox mb={2}>
-            <ArgonButton
-              component={Link}
-              href="https://www.creative-tim.com/product/argon-dashboard-pro-material-ui"
-              target="_blank"
-              rel="noreferrer"
-              color="info"
-              fullWidth
-            >
-              Buy Now
-            </ArgonButton>
-          </ArgonBox>
-          <ArgonBox mb={2}>
-            <ArgonButton
-              component={Link}
-              href="https://www.creative-tim.com/product/argon-dashboard-material-ui"
-              target="_blank"
-              rel="noreferrer"
-              color="dark"
-              fullWidth
-            >
-              Free Download
-            </ArgonButton>
-          </ArgonBox>
-          <ArgonButton
-            component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/argon-dashboard/"
-            target="_blank"
-            rel="noreferrer"
-            color={darkMode ? "white" : "dark"}
-            variant="outlined"
-            fullWidth
-          >
-            View Documentation
-          </ArgonButton>
-        </ArgonBox>
-        <ArgonBox display="flex" justifyContent="center">
-          <GitHubButton
-            href="https://github.com/creativetimofficial/argon-dashboard-material-ui"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star creativetimofficial/argon-dashboard-material-uit on GitHub"
-          >
-            Star
-          </GitHubButton>
-        </ArgonBox>
-        <ArgonBox mt={3} textAlign="center">
-          <ArgonBox mb={0.5}>
-            <ArgonTypography variant="h6">Thank you for sharing!</ArgonTypography>
-          </ArgonBox>
-
-          <ArgonBox display="flex" justifyContent="center">
-            <ArgonBox mr={1.5}>
-              <ArgonButton
-                component={Link}
-                href="//twitter.com/intent/tweet?text=Check%20Argon%20Dashboard%202%20PRO%20MUI%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23react%20%mui&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fargon-dashboard-material-ui"
-                target="_blank"
-                rel="noreferrer"
-                color="dark"
-              >
-                <TwitterIcon />
-                &nbsp; Tweet
-              </ArgonButton>
-            </ArgonBox>
-            <ArgonButton
-              component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/argon-dashboard-material-ui"
-              target="_blank"
-              rel="noreferrer"
-              color="dark"
-            >
-              <FacebookIcon />
-              &nbsp; Share
-            </ArgonButton>
-          </ArgonBox>
-        </ArgonBox>
       </ArgonBox>
     </ConfiguratorRoot>
   );
