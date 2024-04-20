@@ -28,25 +28,22 @@ function BillingInformation() {
     <Card id="delete-account">
       <ArgonBox pt={3} px={2}>
         <ArgonTypography variant="h6" fontWeight="medium">
-          Billing Information
+          Grabaciones
         </ArgonTypography>
       </ArgonBox>
       <ArgonBox pt={1} pb={2} px={2}>
         <ArgonBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
           <Bill
-            name="oliver liam"
-            company="viking burrito"
-            email="oliver@burrito.com"
-            vat="FRB1235476"
+            name="4:50 am 18/04/2024"
           />
           <Bill
-            name="lucas harper"
+            name="11:34 17/04/2024"
             company="stone tech zone"
             email="lucas@stone-tech.com"
             vat="FRB1235476"
           />
           <Bill
-            name="ethan james"
+            name="08:32 pm 17/04/2024"
             company="fiber notion"
             email="ethan@fiber.com"
             vat="FRB1235476"

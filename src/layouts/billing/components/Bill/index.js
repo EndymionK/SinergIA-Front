@@ -65,36 +65,14 @@ function Bill({ name, company, email, vat, noGutter }) {
           >
             <ArgonBox mr={1}>
               <ArgonButton variant="text" color="error">
-                <Icon>delete</Icon>&nbsp;Delete
+                <Icon>delete</Icon>&nbsp;Eliminar
               </ArgonButton>
             </ArgonBox>
             <ArgonButton variant="text" color="dark">
-              <Icon>edit</Icon>&nbsp;Edit
+              <Icon>play</Icon>&nbsp;Reproducir
             </ArgonButton>
           </ArgonBox>
         </ArgonBox>
-        <ArgonBox mb={1} lineHeight={0}>
-          <ArgonTypography variant="caption" color="text">
-            Company Name:&nbsp;&nbsp;&nbsp;
-            <ArgonTypography variant="caption" fontWeight="medium" textTransform="capitalize">
-              {company}
-            </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mb={1} lineHeight={0}>
-          <ArgonTypography variant="caption" color="text">
-            Email Address:&nbsp;&nbsp;&nbsp;
-            <ArgonTypography variant="caption" fontWeight="medium">
-              {email}
-            </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonTypography variant="caption" color="text">
-          VAT Number:&nbsp;&nbsp;&nbsp;
-          <ArgonTypography variant="caption" fontWeight="medium">
-            {vat}
-          </ArgonTypography>
-        </ArgonTypography>
       </ArgonBox>
     </ArgonBox>
   );
