@@ -66,7 +66,6 @@ function BaseLayout({ stickyNavbar, children }) {
       <DashboardNavbar absolute={!stickyNavbar} isMini />
       <ArgonBox mt={stickyNavbar ? 3 : 10}>
         <Grid container>
-
         </Grid>
         {children}
       </ArgonBox>

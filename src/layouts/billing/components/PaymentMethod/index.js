@@ -27,36 +27,52 @@ import ArgonButton from "components/ArgonButton";
 // Argon Dashboard 2 MUI base styles
 import borders from "assets/theme/base/borders";
 
-// Images
-import masterCardLogo from "assets/images/logos/mastercard.png";
-import visaLogo from "assets/images/logos/visa.png";
+import React, { useState } from "react";
+
+// Otros imports omitidos por brevedad
 
 function PaymentMethod() {
   const { borderWidth, borderColor } = borders;
+  
+  // Estado para controlar si la grabación está activa o no
+  const [grabando, setGrabando] = useState(false);
+
+  // Función para manejar el inicio de la grabación
+  const empezarGrabacion = () => {
+    setGrabando(true);
+    console.log("Grabando");
+  };
+
+  // Función para manejar el fin de la grabación
+  const detenerGrabacion = () => {
+    setGrabando(false);
+    console.log("Trasladar a UCI");
+  };
 
   return (
-    <Card id="delete-account">
-      <ArgonBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
+    <Card>
+      <ArgonBox pt={1} px={2} display="flex" justifyContent="space-between" alignItems="center">
         <ArgonTypography variant="h6" fontWeight="medium">
           Grabación
         </ArgonTypography>
-        <ArgonButton variant="gradient" color="dark">
-          <Icon sx={{ fontWeight: "bold" }}>add</Icon>
-          &nbsp;Empezar grabación
-        </ArgonButton>
-        <ArgonButton variant="gradient" color="dark">
-          <Icon sx={{ fontWeight: "bold" }}>add</Icon>
-          &nbsp;Detener grabación
-        </ArgonButton>
+        {!grabando ? (
+          <ArgonButton variant="gradient" color="dark" onClick={empezarGrabacion}>
+            <Icon sx={{ fontWeight: "bold" }}>add</Icon>
+            &nbsp;Empezar grabación
+          </ArgonButton>
+        ) : (
+          <ArgonButton variant="gradient" color="dark" onClick={detenerGrabacion}>
+            <Icon sx={{ fontWeight: "bold" }}>stop</Icon>
+            &nbsp;Detener grabación
+          </ArgonButton>
+        )}
       </ArgonBox>
-      <ArgonBox p={2}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-          </Grid>
-          <Grid item xs={12} md={6}>
-          </Grid>
-        </Grid>
-      </ArgonBox>
+      {/* Mostrar el mensaje solo si la grabación está activa */}
+      {grabando && (
+        <ArgonBox p={2}>
+          <ArgonTypography variant="body1">Grabando</ArgonTypography>
+        </ArgonBox>
+      )}
     </Card>
   );
 }

@@ -33,17 +33,11 @@ function Billing() {
     <BaseLayout stickyNavbar>
       <ArgonBox mt={4}>
         <ArgonBox mb={3}>
-            <Grid item xs={12} lg={8}>
-              <Grid container spacing={3}>
-                </Grid>
-                <Grid item xs={12}>
-                  <PaymentMethod />
-                </Grid>
-              </Grid>
+          <PaymentMethod />
         </ArgonBox>
-            <Grid item xs={12} md={7}>
-              <BillingInformation />
-            </Grid>
+          <Grid item xs={12} md={7}>
+            <BillingInformation />
+          </Grid>
       </ArgonBox>
     </BaseLayout>
   );
