@@ -20,9 +20,6 @@ function Author({ image, name, email }) {
         <ArgonTypography variant="button" fontWeight="medium">
           {name}
         </ArgonTypography>
-        <ArgonTypography variant="caption" color="secondary">
-          {email}
-        </ArgonTypography>
       </ArgonBox>
     </ArgonBox>
   );
@@ -34,35 +31,32 @@ function Function({ job, org }) {
       <ArgonTypography variant="caption" fontWeight="medium" color="text">
         {job}
       </ArgonTypography>
-      <ArgonTypography variant="caption" color="secondary">
-        {org}
-      </ArgonTypography>
     </ArgonBox>
   );
 }
 
 const authorsTableData = {
   columns: [
-    { name: "author", align: "left" },
-    { name: "function", align: "left" },
-    { name: "status", align: "center" },
-    { name: "employed", align: "center" },
-    { name: "action", align: "center" },
+    { name: "Paciente", align: "left" },
+    { name: "Area", align: "left" },
+    { name: "Estado", align: "center" },
+    { name: "Ingresado", align: "center" },
+    { name: "Accion", align: "center" },
   ],
 
   rows: [
     {
-      author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
-      function: <Function job="Manager" org="Organization" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      Paciente: <Author name="John Michael" email="john@creative-tim.com" />,
+      Area: <Function job="Hospitalización" org="Organization" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="Estable" color="success" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          23/04/18
+          23/04/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -70,22 +64,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
-      function: <Function job="Programator" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      Paciente: <Author name="Alexa Liras" email="alexa@creative-tim.com" />,
+      Area: <Function job="Hospitalización" org="Developer" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="En peligro" color="secondary" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          11/01/19
+          11/01/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -93,22 +87,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
-      function: <Function job="Executive" org="Projects" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      Paciente: <Author name="Laurent Perrier" email="laurent@creative-tim.com" />,
+      Area: <Function job="UCI" org="Projects" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="Estable" color="success" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          19/09/17
+          19/09/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -116,22 +110,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
-      function: <Function job="Programator" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="online" color="success" size="xs" container />
+      Paciente: <Author name="Michael Levi" email="michael@creative-tim.com" />,
+      Area: <Function job="Urgencias" org="Developer" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="Estable" color="success" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          24/12/08
+          24/12/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -139,22 +133,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team2} name="Richard Gran" email="richard@creative-tim.com" />,
-      function: <Function job="Manager" org="Executive" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      Paciente: <Author name="Richard Gran" email="richard@creative-tim.com" />,
+      Area: <Function job="UCI" org="Executive" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="En peligro" color="secondary" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          04/10/21
+          04/10/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -162,22 +156,22 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
     {
-      author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
-      function: <Function job="Programtor" org="Developer" />,
-      status: (
-        <ArgonBadge variant="gradient" badgeContent="offline" color="secondary" size="xs" container />
+      Paciente: <Author name="Miriam Eric" email="miriam@creative-tim.com" />,
+      Area: <Function job="Hospitalización" org="Developer" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="En peligro" color="secondary" size="xs" container />
       ),
-      employed: (
+      Ingresado: (
         <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
-          14/09/20
+          14/09/24
         </ArgonTypography>
       ),
-      action: (
+      Accion: (
         <ArgonTypography
           component="a"
           href="#"
@@ -185,10 +179,82 @@ const authorsTableData = {
           color="secondary"
           fontWeight="medium"
         >
-          Edit
+          Editar
         </ArgonTypography>
       ),
     },
+    {
+      Paciente: <Author name="Sara Johnson" email="sara@example.com" />,
+      Area: <Function job="Pediatría" org="Hospital" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="En peligro" color="secondary" size="xs" container />
+      ),
+      Ingresado: (
+        <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
+          03/05/24
+        </ArgonTypography>
+      ),
+      Accion: (
+        <ArgonTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Editar
+        </ArgonTypography>
+      ),
+    },
+    {
+      Paciente: <Author name="Lucas Martinez" email="lucas@example.com" />,
+      Area: <Function job="UCI" org="Hospital" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="Estable" color="success" size="xs" container />
+      ),
+      Ingresado: (
+        <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
+          12/06/24
+        </ArgonTypography>
+      ),
+      Accion: (
+        <ArgonTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Editar
+        </ArgonTypography>
+      ),
+    },
+    {
+      Paciente: <Author name="Elena Rodriguez" email="elena@example.com" />,
+      Area: <Function job="Cirugía" org="Hospital" />,
+      Estado: (
+        <ArgonBadge variant="gradient" badgeContent="En peligro" color="secondary" size="xs" container />
+      ),
+      Ingresado: (
+        <ArgonTypography variant="caption" color="secondary" fontWeight="medium">
+          20/07/24
+        </ArgonTypography>
+      ),
+      Accion: (
+        <ArgonTypography
+          component="a"
+          href="#"
+          variant="caption"
+          color="secondary"
+          fontWeight="medium"
+        >
+          Editar
+        </ArgonTypography>
+      ),
+    },
+    // Puedes agregar más pacientes aquí según sea necesario
+    
+    
   ],
 };
 
