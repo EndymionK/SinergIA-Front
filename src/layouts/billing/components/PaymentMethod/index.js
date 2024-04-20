@@ -28,30 +28,36 @@ import ArgonButton from "components/ArgonButton";
 import borders from "assets/theme/base/borders";
 
 import React, { useState } from "react";
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+import Stack from '@mui/material/Stack';
+import { Dialog, DialogContent, Box } from '@mui/material';
 
 // Otros imports omitidos por brevedad
 
 function PaymentMethod() {
   const { borderWidth, borderColor } = borders;
-  
-  // Estado para controlar si la grabación está activa o no
   const [grabando, setGrabando] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
-  // Función para manejar el inicio de la grabación
   const empezarGrabacion = () => {
     setGrabando(true);
     console.log("Grabando");
   };
 
-  // Función para manejar el fin de la grabación
   const detenerGrabacion = () => {
     setGrabando(false);
+    setShowAlert(true);
     console.log("Trasladar a UCI");
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
   };
 
   return (
     <Card>
-      <ArgonBox pt={1} px={2} display="flex" justifyContent="space-between" alignItems="center">
+      <ArgonBox pt={1} px={2} display="flex" justifyContent="space-between" alignItems="center" pb={1}>
         <ArgonTypography variant="h6" fontWeight="medium">
           Grabación
         </ArgonTypography>
@@ -67,14 +73,25 @@ function PaymentMethod() {
           </ArgonButton>
         )}
       </ArgonBox>
-      {/* Mostrar el mensaje solo si la grabación está activa */}
       {grabando && (
         <ArgonBox p={2}>
           <ArgonTypography variant="body1">Grabando</ArgonTypography>
         </ArgonBox>
       )}
+      <Dialog open={showAlert} onClose={handleCloseAlert} maxWidth="sm" fullWidth>
+        <DialogContent sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <Box sx={{ width: '100%' }}>
+            <Alert severity="warning" onClose={handleCloseAlert} variant="outlined" sx={{ width: '100%', borderRadius: 0 }}>
+              <AlertTitle>¡Alerta!</AlertTitle>
+              Enviar a UCI
+            </Alert>
+          </Box>
+        </DialogContent>
+      </Dialog>
     </Card>
   );
 }
 
 export default PaymentMethod;
+
+

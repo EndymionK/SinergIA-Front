@@ -68,7 +68,6 @@ function SidenavFooter() {
           fullWidth
           mb={2}
         >
-          Upgrade to PRO
         </ArgonButton>
       </ArgonBox>
     </ArgonBox>

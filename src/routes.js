@@ -56,7 +56,7 @@ const routes = [
   },
   {
     type: "route",
-    name: "Tables",
+    name: "Pacientes",
     key: "tables",
     route: "/tables",
     icon: (
@@ -66,17 +66,17 @@ const routes = [
   },
   {
     type: "route",
-    name: "Billing",
+    name: "Grabadora",
     key: "billing",
     route: "/billing",
     icon: <ArgonBox component="i" color="success" fontSize="14px" className="ni ni-credit-card" />,
     component: <Billing />,
   },
 
-  { type: "title", title: "Account Pages", key: "account-pages" },
+  { type: "title", title: "Cuenta", key: "account-pages" },
   {
     type: "route",
-    name: "Profile",
+    name: "Perfil",
     key: "profile",
     route: "/profile",
     icon: <ArgonBox component="i" color="dark" fontSize="14px" className="ni ni-single-02" />,
@@ -84,7 +84,7 @@ const routes = [
   },
   {
     type: "route",
-    name: "Sign In",
+    name: "Ingresar",
     key: "sign-in",
     route: "/authentication/sign-in",
     icon: (
@@ -94,7 +94,7 @@ const routes = [
   },
   {
     type: "route",
-    name: "Sign Up",
+    name: "Registrarse",
     key: "sign-up",
     route: "/authentication/sign-up",
     icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-collection" />,

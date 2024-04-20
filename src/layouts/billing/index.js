@@ -30,9 +30,9 @@ import BillingInformation from "layouts/billing/components/BillingInformation";
 
 function Billing() {
   return (
-    <BaseLayout stickyNavbar>
+    <BaseLayout>
       <ArgonBox mt={4}>
-        <ArgonBox mb={3}>
+        <ArgonBox mb={2}>
           <PaymentMethod />
         </ArgonBox>
           <Grid item xs={12} md={7}>

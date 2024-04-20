@@ -22,7 +22,6 @@ import ArgonTypography from "components/ArgonTypography";
 
 // Argon Dashboard 2 MUI examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import Table from "examples/Tables/Table";
 
@@ -36,7 +35,6 @@ function Tables() {
 
   return (
     <DashboardLayout>
-      <DashboardNavbar />
       <ArgonBox py={3}>
         <ArgonBox mb={3}>
           <Card>

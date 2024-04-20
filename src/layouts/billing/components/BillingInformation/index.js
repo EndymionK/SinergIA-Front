@@ -37,7 +37,7 @@ function BillingInformation() {
             name="4:50 am 18/04/2024"
           />
           <Bill
-            name="11:34 17/04/2024"
+            name="11:34 pm 17/04/2024"
             company="stone tech zone"
             email="lucas@stone-tech.com"
             vat="FRB1235476"
