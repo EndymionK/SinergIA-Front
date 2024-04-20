@@ -27,6 +27,8 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import BaseLayout from "layouts/billing/components/BaseLayout";
 import PaymentMethod from "layouts/billing/components/PaymentMethod";
 import BillingInformation from "layouts/billing/components/BillingInformation";
+import Transactions from "layouts/billing/components/Transactions";
+
 
 function Billing() {
   return (
@@ -35,9 +37,12 @@ function Billing() {
         <ArgonBox mb={2}>
           <PaymentMethod />
         </ArgonBox>
-          <Grid item xs={12} md={7}>
-            <BillingInformation />
-          </Grid>
+        <ArgonBox pb={2}>
+          <Transactions />
+          </ArgonBox>
+        <Grid item xs={12} md={7}>
+          <BillingInformation />
+        </Grid>
       </ArgonBox>
     </BaseLayout>
   );

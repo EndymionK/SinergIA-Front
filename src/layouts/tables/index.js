@@ -55,6 +55,7 @@ function Tables() {
           </Card>
         </ArgonBox>
       </ArgonBox>
+      <Footer/>
     </DashboardLayout>
   );
 }
