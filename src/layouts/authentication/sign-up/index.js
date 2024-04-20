@@ -38,34 +38,21 @@ const bgImage =
 function Cover() {
   return (
     <CoverLayout
-      title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
       image={bgImage}
       imgPosition="top"
       button={{ color: "dark", variant: "gradient" }}
     >
       <Card>
-        <ArgonBox p={3} mb={1} textAlign="center">
-          <ArgonTypography variant="h5" fontWeight="medium">
-            Register with
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mb={2}>
-          <Socials />
-        </ArgonBox>
-        <ArgonBox px={12}>
-          <Separator />
-        </ArgonBox>
         <ArgonBox pt={2} pb={3} px={3}>
           <ArgonBox component="form" role="form">
             <ArgonBox mb={2}>
-              <ArgonInput placeholder="Name" />
+              <ArgonInput placeholder="Nombre" />
             </ArgonBox>
             <ArgonBox mb={2}>
-              <ArgonInput type="email" placeholder="Email" />
+              <ArgonInput type="email" placeholder="Correo" />
             </ArgonBox>
             <ArgonBox mb={2}>
-              <ArgonInput type="password" placeholder="Password" />
+              <ArgonInput type="password" placeholder="Contraseña" />
             </ArgonBox>
             <ArgonBox display="flex" alignItems="center">
               <Checkbox defaultChecked />
@@ -74,7 +61,7 @@ function Cover() {
                 fontWeight="regular"
                 sx={{ cursor: "pointer", userSelect: "none" }}
               >
-                &nbsp;&nbsp;I agree the&nbsp;
+                &nbsp;&nbsp;Acepto los&nbsp;
               </ArgonTypography>
               <ArgonTypography
                 component="a"
@@ -83,17 +70,17 @@ function Cover() {
                 fontWeight="bold"
                 textGradient
               >
-                Terms and Conditions
+                Terminos y condiciones
               </ArgonTypography>
             </ArgonBox>
             <ArgonBox mt={4} mb={1}>
               <ArgonButton variant="gradient" color="dark" fullWidth>
-                sign up
+                Registrarse
               </ArgonButton>
             </ArgonBox>
             <ArgonBox mt={2}>
               <ArgonTypography variant="button" color="text" fontWeight="regular">
-                Already have an account?&nbsp;
+                ¿Ya tienes una cuenta?&nbsp;
                 <ArgonTypography
                   component={Link}
                   to="/authentication/sign-in"
@@ -102,7 +89,7 @@ function Cover() {
                   fontWeight="bold"
                   textGradient
                 >
-                  Sign in
+                  Ingresa
                 </ArgonTypography>
               </ArgonTypography>
             </ArgonBox>

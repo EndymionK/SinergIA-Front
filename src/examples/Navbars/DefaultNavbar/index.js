@@ -113,16 +113,16 @@ function DefaultNavbar({ brand, transparent, light, action }) {
               route="/dashboard"
               light={light}
             />
-            <DefaultNavbarLink icon="person" name="profile" route="/profile" light={light} />
+            <DefaultNavbarLink icon="person" name="Perfil" route="/profile" light={light} />
             <DefaultNavbarLink
               icon="account_circle"
-              name="sign up"
+              name="Registrate"
               route="/authentication/sign-up"
               light={light}
             />
             <DefaultNavbarLink
               icon="key"
-              name="sign in"
+              name="Ingresa"
               route="/authentication/sign-in"
               light={light}
             />

@@ -251,9 +251,7 @@ const authorsTableData = {
           Editar
         </ArgonTypography>
       ),
-    },
-    // Puedes agregar más pacientes aquí según sea necesario
-    
+    },    
     
   ],
 };
