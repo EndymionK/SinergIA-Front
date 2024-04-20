@@ -25,7 +25,7 @@ import Bill from "layouts/billing/components/Bill";
 
 function BillingInformation() {
   return (
-    <Card id="delete-account">
+    <Card id="delete-account" style={{marginBottom:'3%'}}>
       <ArgonBox pt={3} px={2}>
         <ArgonTypography variant="h6" fontWeight="medium">
           Grabaciones

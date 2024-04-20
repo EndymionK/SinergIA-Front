@@ -162,7 +162,6 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <ArgonBox sx={(theme) => navbarRow(theme, { isMini })}>
             <ArgonBox pr={1}>
               <ArgonInput
-                placeholder="Type here..."
                 startAdornment={
                   <Icon fontSize="small" style={{ marginRight: "6px" }}>
                     search
@@ -185,7 +184,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                     fontWeight="medium"
                     color={light && transparentNavbar ? "white" : "dark"}
                   >
-                    Sign in
+                    Iniciar sesión
                   </ArgonTypography>
                 </IconButton>
               </Link>
@@ -196,25 +195,6 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 onClick={handleMiniSidenav}
               >
                 <Icon>{miniSidenav ? "menu_open" : "menu"}</Icon>
-              </IconButton>
-              <IconButton
-                size="small"
-                color={light && transparentNavbar ? "white" : "dark"}
-                sx={navbarIconButton}
-                onClick={handleConfiguratorOpen}
-              >
-                <Icon>settings</Icon>
-              </IconButton>
-              <IconButton
-                size="small"
-                color={light && transparentNavbar ? "white" : "dark"}
-                sx={navbarIconButton}
-                aria-controls="notification-menu"
-                aria-haspopup="true"
-                variant="contained"
-                onClick={handleOpenMenu}
-              >
-                <Icon>notifications</Icon>
               </IconButton>
               {renderMenu()}
             </ArgonBox>
