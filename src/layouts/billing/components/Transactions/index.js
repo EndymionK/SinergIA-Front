@@ -9,7 +9,7 @@ import ArgonTypography from "components/ArgonTypography";
 function SymptomChecklist() {
   return (
     <Card sx={{ height: "100%" }}>
-      <ArgonBox pt={3} px={2} pb={2}>
+      {/* <ArgonBox pt={3} px={2} pb={2}>
         <ArgonBox mb={2}>
           <ArgonTypography
             variant="caption"
@@ -77,7 +77,7 @@ function SymptomChecklist() {
             </ArgonBox>
           </Grid>
         </Grid >
-      </ArgonBox >
+      </ArgonBox > */}
     </Card>
   );
 }
