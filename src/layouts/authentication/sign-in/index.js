@@ -41,21 +41,21 @@ function Illustration() {
 
   return (
     <IllustrationLayout
-      title="Sign In"
-      description="Enter your email and password to sign in"
+      title="Ingresa"
+      description="Introduzca su correo electrónico y contraseña para iniciar sesión"
       illustration={{
         image: bgImage,
-        title: '"Attention is the new currency"',
+        title: '"Tratar a la enfermedad es una ciencia, tratar al enfermo es un arte',
         description:
-          "The more effortless the writing looks, the more effort the writer actually put into the process.",
+          "-Esculapio",
       }}
     >
       <ArgonBox component="form" role="form">
         <ArgonBox mb={2}>
-          <ArgonInput type="email" placeholder="Email" size="large" />
+          <ArgonInput type="email" placeholder="Correo" size="large" />
         </ArgonBox>
         <ArgonBox mb={2}>
-          <ArgonInput type="password" placeholder="Password" size="large" />
+          <ArgonInput type="password" placeholder="Contraseña" size="large" />
         </ArgonBox>
         <ArgonBox display="flex" alignItems="center">
           <Switch checked={rememberMe} onChange={handleSetRememberMe} />
@@ -65,17 +65,17 @@ function Illustration() {
             onClick={handleSetRememberMe}
             sx={{ cursor: "pointer", userSelect: "none" }}
           >
-            &nbsp;&nbsp;Remember me
+            &nbsp;&nbsp;Recuerdame
           </ArgonTypography>
         </ArgonBox>
         <ArgonBox mt={4} mb={1}>
           <ArgonButton color="info" size="large" fullWidth>
-            Sign In
+            Ingresar
           </ArgonButton>
         </ArgonBox>
         <ArgonBox mt={3} textAlign="center">
           <ArgonTypography variant="button" color="text" fontWeight="regular">
-            Don&apos;t have an account?{" "}
+            ¿No tienes una cuenta?{" "}
             <ArgonTypography
               component={Link}
               to="/authentication/sign-up"
@@ -83,7 +83,7 @@ function Illustration() {
               color="info"
               fontWeight="medium"
             >
-              Sign up
+              Registrate
             </ArgonTypography>
           </ArgonTypography>
         </ArgonBox>
